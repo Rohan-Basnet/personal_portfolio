@@ -1,0 +1,28 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django
+db.sqlite3
+media/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# macOS
+.DS_Store
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Python testing
+.pytest_cache/
+.coverage
