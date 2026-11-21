@@ -1,0 +1,186 @@
+{% extends "base.html" %}
+{% block title %}project one{% endblock %}
+{% block content %}
+<!-- Navbar -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+
+        <a class="navbar-brand" href="#">Portfolio.</a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#"
+                       data-bs-toggle="dropdown">
+                        Projects
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Project One</a></li>
+                        <li><a class="dropdown-item" href="#">Project Two</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<section class="container hero">
+    <div class="row align-items-center mt-2">
+
+        <div class="col-md-1 ">  
+
+            <h1 class="display-2 fw-bold">
+                SQL <span>DataWarehouse</span>
+            </h1>
+        </div>
+    </div>
+</section>
+
+
+<!-- Project Overview -->
+<section id="overview" class="section-bg py-4 mt-2">
+    <div class="container">
+
+        <h2 class="fw-bold mb-3">
+            🚀 Project <span style="color: var(--accent)">Overview</span>
+        </h2>
+
+        <p class="section-subtitle mt-3">
+            This is a SQL DataWarehouse project that demonstrates my skills in database design, 
+            data modeling, and query optimization. The project includes a comprehensive schema, 
+            ETL processes, and performance tuning techniques to ensure efficient data retrieval 
+            and analysis.
+        </p>
+
+    </div>
+   
+</section>
+
+<!-- Data Architecture -->
+<section id="architecture" class="container py-5">
+
+    <div class=" mb-5">
+        <h2 class="fw-bold">
+            🏗️ Data <span style="color: var(--accent)">Architecture</span>
+        </h2>
+        <p class="mb-3">
+            The project follows the <strong>Medallion Architecture</strong>,
+            providing a clear separation of concerns:
+        </p>
+    </div>
+     <div class="table-responsive">
+        <table class="table table-bordered table-hover align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>Layer</th>
+                    <th>Status</th>
+                    <th>Purpose</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><strong>🟫 Bronze</strong></td>
+                    <td><span class="badge bg-secondary">Raw</span></td>
+                    <td>
+                        Ingests data as-is from CSV sources into the
+                        <code>bronze</code> schema.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><strong>🥈 Silver</strong></td>
+                    <td><span class="badge bg-info text-dark">Cleansed</span></td>
+                    <td>
+                        Handles data type casting, trims whitespace,
+                        and removes duplicates.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><strong>🥇 Gold</strong></td>
+                    <td><span class="badge bg-warning text-dark">Curated</span></td>
+                    <td>
+                        Final Star Schema (Facts & Dimensions)
+                        optimized for Power BI/Tableau.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- Project Requirements and Specifications -->
+<section id="req_spec" class="section-bg py-5 mt-2">
+    <div class="container">
+
+        <h2 class="fw-bold mb-3">
+            🎯 Project <span style="color: var(--accent)">Requirements & Specifications</span>
+        </h2>
+        <div class="ms-5">
+            <h4 id="objective" class="fw-bold mt-4 me-3"><span style="color: var(--accent)">Objective</span> </h4>
+            <ul class="section-subtitle mt-3">
+                <li>Consolidate sales and customer data from disparate systems into a single "Source of Truth" using SQL Server.</li>
+            </ul>
+
+            <h4 id="technical-scope" class="fw-bold mt-4">Technical <span style="color: var(--accent)">Scope</span> </h4>
+        
+            <ul class="section-subtitle mt-3">
+                <li>Data Sources: CSV exports from ERP (Sales, Products) and CRM (Customers).</li>
+                <li>Transformation: Standardization of date formats, handling NULL values, and mapping related keys.</li>
+                <li>Modeling: Implementation of a Star Schema (Fact & Dimension tables).</li>
+                <li>Historical Scope: Focuses on the current snapshot; no SCD Type 2 tracking is applied.</li>
+            </ul>
+            
+
+        </div>
+    </div>
+   
+</section>
+
+<!-- Key Transformations -->
+<section id="transformations" class="container py-5 mt-2">
+    <div class="container">
+
+        <h2 class="fw-bold mb-3">
+            📊 Key <span style="color: var(--accent)">Transformations</span>
+        </h2>
+        <ul class="section-subtitle ms-3">
+            <li>Data Cleaning: Used TRIM(), ISNULL(), and CASE statements to handle missing or messy data.</li>
+            <li>Format Standardization: Converted varied date strings into standard DATE types.</li>
+            <li>Relationship Mapping: Created Surrogate Keys to link ERP and CRM data efficiently.</li>
+        </ul> 
+    </div>
+   
+</section>
+<section id="detailed_description" class="section-bg py-5 mt-2">
+    <div class="container">
+
+        <h2 class="mb-3">
+            For detailed <span style="color: var(--accent)">information</span>, please refer to the <a href="https://github.com/Rohan-Basnet/sql-data-warehouse-project#%EF%B8%8F-data-architecturepath/to/detailed/description">Detailed Description</a>
+        </h2>
+        
+    </div>
+   
+</section>
+
+{% endblock %}
