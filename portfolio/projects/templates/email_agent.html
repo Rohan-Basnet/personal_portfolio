@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+
+
+{% block title %}Email Agent{% endblock %}
+{% block content %}
+<!-- Navbar -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+
+        <a class="navbar-brand" href="{% url 'main' %}">Portfolio.</a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+       
+    </div>
+</nav>
+
+<section class="container hero">
+    <div class="row align-items-center mt-2">
+
+        <div class="col-md-12">  
+
+            <h1 class="display-2 fw-bold">
+                📧 Email <span>Agent</span>
+            </h1>
+        </div>
+    </div>
+</section>
+
+<!-- Project Overview -->
+<section id="overview" class="section-bg py-4 mt-2">
+    <div class="container">
+
+        <h2 class="fw-bold mb-3">
+            🚀 Project <span style="color: var(--accent)">Overview</span>
+        </h2>
+
+        <p class="section-subtitle mt-3">
+            An AI-powered Gmail assistant built using Google Agent Development Kit (Google ADK) and the Groq API. 
+            The agent reads Gmail messages and generates intelligent, context-aware replies on behalf of the user 
+            using the Gmail API and OAuth 2.0 authentication.
+        </p>
+
+    </div>
+   
+</section>
+
+<!-- Data Architecture -->
+<section id="features" class="container py-5">
+
+    <div class=" mb-5">
+        <h2 class="fw-bold">
+            🏗️ Project <span style="color: var(--accent)">Features</span>
+        </h2>
+        <ul class="section-subtitle mt-3 ms-3">
+            <li>Gmail API Integration: The agent uses the Gmail API to read incoming emails and send replies.</li>
+            <li>OAuth 2.0 Authentication: Securely authenticates users to access their Gmail accounts.</li>
+            <li>Context-Aware Responses: Utilizes the Groq API to generate intelligent and contextually relevant email responses.</li>
+            <li>Customizable Settings: Users can configure the agent's behavior, such as response tone and frequency.</li>
+        </ul>
+    </div>
+    
+</section>
+
+<!-- Project Requirements and Specifications -->
+<section id="req_spec" class="section-bg py-5 mt-2">
+    <div class="container">
+
+        <h2 class="fw-bold mb-3">
+            🛠️ Tech <span style="color: var(--accent)">Stack</span>
+        </h2>
+        <div class="tech-stack">
+
+            <span class="tech-badge">
+                <i class="bi bi-code-slash"></i>
+                Python
+            </span>
+
+            <span class="tech-badge">
+                <i class="bi bi-robot"></i>
+                Google ADK
+            </span>
+
+            <span class="tech-badge">
+                <i class="bi bi-lightning-charge"></i>
+                Groq API
+            </span>
+
+            <span class="tech-badge">
+                <i class="bi bi-envelope"></i>
+                Gmail API
+            </span>
+
+            <span class="tech-badge">
+                <i class="bi bi-shield-lock"></i>
+                Google OAuth 2.0
+            </span>
+
+            <span class="tech-badge">
+                <i class="bi bi-plug"></i>
+                Google API Python Client
+            </span>
+
+            <span class="tech-badge">
+                <i class="bi bi-gear"></i>
+                python-dotenv
+            </span>
+
+        </div>
+    </div>
+   
+</section>
+
+
+<section id="detailed_description" class="container py-5 mt-2">
+    <div class="container">
+
+        <h6 class="mb-3">
+            For detailed <span style="color: var(--accent)">information</span>, please refer to the <a href="https://github.com/Rohan-Basnet/email_agent">Detailed Description</a>
+        </h6>
+
+    </div>
+   
+</section>
+
+{% endblock %}
