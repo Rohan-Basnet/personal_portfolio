@@ -39,7 +39,7 @@ ALLOWED_HOSTS = [
 CSRF_TRUSTED_ORIGINS = [
     "https://basnetrohan.com.np",
     "https://www.basnetrohan.com.np",
-    "https://personal-portfolio.onrender.com",
+    "https://personal-portfolio-6x8k.onrender.com",
 
 ]
 
