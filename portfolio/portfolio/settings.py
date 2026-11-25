@@ -33,7 +33,7 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
     "basnetrohan.com.np",
     "www.basnetrohan.com.np",
-    "personal-portfolio.onrender.com",
+    "personal-portfolio-6x8k.onrender.com"
     
 ]
 CSRF_TRUSTED_ORIGINS = [
