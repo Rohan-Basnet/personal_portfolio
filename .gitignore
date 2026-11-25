@@ -12,7 +12,7 @@ media/
 venv/
 .venv/
 env/
-
+env
 # macOS
 .DS_Store
 
@@ -26,3 +26,11 @@ env/
 # Python testing
 .pytest_cache/
 .coverage
+#macOS file system
+/.DS_Store
+../.DS_Store
+# macOS
+.DS_Store
+
+# Django collected static files
+staticfiles/
